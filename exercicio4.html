@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <center><h1>Lista 1 - Arrays</h1></center>
+    <script>
+    function receberPalavras() {
+        let palavras = [];
+        for (let i = 0; i < 5; i++) {
+            let palavra = prompt(`Digite uma palavra ${i + 1}:`);
+            palavras.push(palavra);
+        }
+        return palavras;
+    }
+
+    function encontrarMaiorPalavra(palavras) {
+        let maiorPalavra = palavras[0];
+        for (let i = 1; i < palavras.length; i++) {
+            if (palavras[i].length > maiorPalavra.length) {
+                maiorPalavra = palavras[i];
+            }
+        }
+        return maiorPalavra;
+    }
+
+    let palavras = receberPalavras();
+    let maiorPalavra = encontrarMaiorPalavra(palavras);
+
+    document.write("Palavra com o maior número de caracteres: " + maiorPalavra + "<br>");
+    document.write("Quantidade de caracteres: " + maiorPalavra.length);
+    //*USEI CHAT PARA CORRIGIR UM ERRO DE EXIBIÇÃO//
+    </script>
+</body>
+</html>

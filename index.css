@@ -1,0 +1,166 @@
+ 
+body {
+    background-color: #6685;
+    color: rgb(0, 0, 0);
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #222;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+nav {
+    background-color: #333;
+    overflow-x: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 2rem;
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.intro img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.history {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.history h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.history p {
+    text-align: justify;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.history img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(255, 255, 255);
+}
+
+.fotologo {
+    width: 43%;
+    max-width: 262px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 20px; 
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 500px; 
+    margin: 20px 0;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    border-radius: 50%; 
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.video-container {
+    max-width: 500px;
+    margin-top: 20px;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+@media screen and (min-width: 700px) {
+    #leftsidebar {width: 400px; float: left;}
+    #main {margin-left: 216px;}
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #result {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>Lista 1 - Arrays</h1></center>
+    <div id="result"></div>
+    <script>
+        alert("MB please!");
+
+        function processarNumeros(numeros) {
+            const soma = numeros.reduce((acc, num) => acc + num, 0);
+            const maiorValor = Math.max(...numeros);
+            const menorValor = Math.min(...numeros);
+
+            const resultDiv = document.getElementById('result');
+
+            if (soma > 100) {
+                resultDiv.textContent = "A soma excede 100. Maior valor: " + maiorValor;
+            } else {
+                resultDiv.textContent = "A soma não excede 100. Menor valor: " + menorValor;
+            }
+        }
+
+        let n1 = parseInt(prompt("Digite o primeiro número"));
+        let n2 = parseInt(prompt("Digite o segundo número"));
+        let n3 = parseInt(prompt("Digite o terceiro número"));
+
+        if (!isNaN(n1) && !isNaN(n2) && !isNaN(n3)) {
+            let numeros = [n1, n2, n3];
+            processarNumeros(numeros);
+        } else {
+            document.getElementById('result').textContent = "Por favor, insira números válidos.";
+        }
+    </script>
+</body>
+</html>
